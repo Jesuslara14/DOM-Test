@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h1 class="pink">Please choose a color</h1>
+    <script>
+        $("h1").toggle(
+            function(){$("h1").removeClass("pink");},
+            function(){$("h1").addClass("pink");}
+        )
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-10</title>
+</head>
+<body>
+    <div class="colors"> 
+        <h1 id="color">h1 tag</h1> 
+    </div> 
+    <script>
+        var color = document.getElementById("color");
+        var parentNode = color.parentNode;
+        var newP = document.createElement("p");
+        newP.id = "color";
+        newP.textContent = "new replacement element";
+        parentNode.replaceChild(newP, color);
+    </script>
+</body>
+</html>
